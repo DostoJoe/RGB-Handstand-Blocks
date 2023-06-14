@@ -1,0 +1,281 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1572 ]
+[d frameptr 6 ]
+"101 C:\Users\Joe\Documents\BlockZ PIC project\BlockZ RGB.X\blockzUSB.c
+[v _init_pic init_pic `(v  1 e 1 0 ]
+"133
+[v _init_pwm init_pwm `(v  1 e 1 0 ]
+"163
+[v _solidCol solidCol `(v  1 e 1 0 ]
+"189
+[v _Sleep Sleep `(v  1 e 1 0 ]
+"218
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"231
+[v _calculateStep calculateStep `(i  1 e 2 0 ]
+"239
+[v _calculateVal calculateVal `(i  1 e 2 0 ]
+"318
+[v _my_isr my_isr `II(v  1 e 1 0 ]
+"389
+[v _VddCheck VddCheck `(v  1 e 1 0 ]
+"407
+[v _main main `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"42 C:\Users\Joe\Documents\BlockZ PIC project\BlockZ RGB.X\blockzUSB.c
+[v _black black `[3]i  1 e 6 0 ]
+"43
+[v _white white `[3]i  1 e 6 0 ]
+"44
+[v _red red `[3]i  1 e 6 0 ]
+"48
+[v _orange orange `[3]i  1 e 6 0 ]
+"49
+[v _purple purple `[3]i  1 e 6 0 ]
+"51
+[v _lime lime `[3]i  1 e 6 0 ]
+"60
+[v _redVal redVal `i  1 e 2 0 ]
+"61
+[v _greenVal greenVal `i  1 e 2 0 ]
+"62
+[v _blueVal blueVal `i  1 e 2 0 ]
+"70
+[v _prevR prevR `i  1 e 2 0 ]
+"71
+[v _prevG prevG `i  1 e 2 0 ]
+"72
+[v _prevB prevB `i  1 e 2 0 ]
+"75
+[v _sw1Count sw1Count `i  1 e 2 0 ]
+"76
+[v _sw2Count sw2Count `i  1 e 2 0 ]
+"78
+[v _swNum swNum `i  1 e 2 0 ]
+"81
+[v _exitLoop exitLoop `uc  1 e 1 0 ]
+"82
+[v _dummy dummy `i  1 e 2 0 ]
+"83
+[v _colourSet colourSet `i  1 e 2 0 ]
+"84
+[v _intCount1 intCount1 `i  1 e 2 0 ]
+"85
+[v _intCount2 intCount2 `i  1 e 2 0 ]
+"86
+[v _sw1Set sw1Set `i  1 e 2 0 ]
+"87
+[v _sw2Set sw2Set `i  1 e 2 0 ]
+"88
+[v _skipColour skipColour `i  1 e 2 0 ]
+"89
+[v _timerCount timerCount `i  1 e 2 0 ]
+"92
+[v _adcVal adcVal `i  1 e 2 0 ]
+"93
+[v _batLow batLow `i  1 e 2 0 ]
+"94
+[v _lowPowerReset lowPowerReset `i  1 e 2 0 ]
+"97
+[v _inSleep inSleep `i  1 e 2 0 ]
+"98
+[v _callSleep callSleep `i  1 e 2 0 ]
+"99
+[v _sleepCount sleepCount `i  1 e 2 0 ]
+"351 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic12f1572.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"429
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"914
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1077
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1217
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1334
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1489
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1509
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S68 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1538
+[s S76 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S80 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S83 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[u S86 . 1 `S68 1 . 1 0 `S76 1 . 1 0 `S80 1 . 1 0 `S83 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES86  1 e 1 @157 ]
+"1598
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1712
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1947
+[v _FVRCON FVRCON `VEuc  1 e 1 @279 ]
+"2242
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2459
+[v _VREGCON VREGCON `VEuc  1 e 1 @407 ]
+"3587
+[v _PWM1PH PWM1PH `VEus  1 e 2 @3473 ]
+"3750
+[v _PWM1DC PWM1DC `VEus  1 e 2 @3475 ]
+"3913
+[v _PWM1PR PWM1PR `VEus  1 e 2 @3477 ]
+"4402
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @3483 ]
+"4762
+[v _PWM1CLKCON PWM1CLKCON `VEuc  1 e 1 @3486 ]
+"5060
+[v _PWM2PH PWM2PH `VEus  1 e 2 @3489 ]
+"5223
+[v _PWM2DC PWM2DC `VEus  1 e 2 @3491 ]
+"5386
+[v _PWM2PR PWM2PR `VEus  1 e 2 @3493 ]
+"5875
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @3499 ]
+"6235
+[v _PWM2CLKCON PWM2CLKCON `VEuc  1 e 1 @3502 ]
+"6533
+[v _PWM3PH PWM3PH `VEus  1 e 2 @3505 ]
+"6696
+[v _PWM3DC PWM3DC `VEus  1 e 2 @3507 ]
+"6859
+[v _PWM3PR PWM3PR `VEus  1 e 2 @3509 ]
+"7348
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @3515 ]
+"7708
+[v _PWM3CLKCON PWM3CLKCON `VEuc  1 e 1 @3518 ]
+"8853
+[v _PWM1LD PWM1LD `VEb  1 e 0 @27903 ]
+"9192
+[v _PWM2LD PWM2LD `VEb  1 e 0 @28031 ]
+"9531
+[v _PWM3LD PWM3LD `VEb  1 e 0 @28159 ]
+"9807
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+"9810
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"9813
+[v _RA5 RA5 `VEb  1 e 0 @101 ]
+"9957
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"10008
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1120 ]
+"10011
+[v _TRISA1 TRISA1 `VEb  1 e 0 @1121 ]
+"10014
+[v _TRISA2 TRISA2 `VEb  1 e 0 @1122 ]
+"10017
+[v _TRISA3 TRISA3 `VEb  1 e 0 @1123 ]
+"10020
+[v _TRISA4 TRISA4 `VEb  1 e 0 @1124 ]
+"10023
+[v _TRISA5 TRISA5 `VEb  1 e 0 @1125 ]
+"10098
+[v _WPUA3 WPUA3 `VEb  1 e 0 @4195 ]
+"10101
+[v _WPUA4 WPUA4 `VEb  1 e 0 @4196 ]
+"407 C:\Users\Joe\Documents\BlockZ PIC project\BlockZ RGB.X\blockzUSB.c
+[v _main main `(i  1 e 2 0 ]
+{
+"518
+} 0
+"133
+[v _init_pwm init_pwm `(v  1 e 1 0 ]
+{
+"161
+} 0
+"101
+[v _init_pic init_pic `(v  1 e 1 0 ]
+{
+"131
+} 0
+"389
+[v _VddCheck VddCheck `(v  1 e 1 0 ]
+{
+"405
+} 0
+"218
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+[v delay_ms@microseconds microseconds `i  1 p 2 35 ]
+"229
+} 0
+"189
+[v _Sleep Sleep `(v  1 e 1 0 ]
+{
+"216
+} 0
+"163
+[v _solidCol solidCol `(v  1 e 1 0 ]
+{
+[v solidCol@colour colour `*.4i  1 a 1 wreg ]
+"172
+[v solidCol@B B `l  1 a 4 28 ]
+"171
+[v solidCol@G G `l  1 a 4 24 ]
+"170
+[v solidCol@R R `l  1 a 4 20 ]
+"163
+[v solidCol@colour colour `*.4i  1 a 1 wreg ]
+"165
+[v solidCol@colour colour `*.4i  1 a 1 32 ]
+"187
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 0 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 2 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 6 ]
+"129
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 14 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 13 ]
+[v ___aldiv@counter counter `uc  1 a 1 12 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+[v ___aldiv@dividend dividend `l  1 p 4 8 ]
+"41
+} 0
+"318 C:\Users\Joe\Documents\BlockZ PIC project\BlockZ RGB.X\blockzUSB.c
+[v _my_isr my_isr `II(v  1 e 1 0 ]
+{
+"387
+} 0
